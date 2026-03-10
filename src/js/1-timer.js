@@ -1,3 +1,17 @@
+// імпорт бібліотеки
+import flatpickr from "flatpickr";
+
+// імпорт стилів
+import "flatpickr/dist/flatpickr.min.css";
+
+// ініціалізація календаря
+flatpickr("#datetime-picker", {
+    enableTime: true,
+    time_24hr: true,
+    defaultDate: new Date(),
+    minuteIncrement: 1,
+});
+
 const startBtn = document.querySelector('[data-start]');
 const dateInput = document.querySelector('#datetime-picker');
 
